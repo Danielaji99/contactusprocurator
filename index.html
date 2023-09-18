@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTUS PROCURATOR</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3916200b9e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+      <div class="header">
+        <img src="contact-information.png" alt="logo">
+        <h1>CONTACTUS PROCURATOR</h1>
+      </div>
+    </section> 
+
+    <section id="input">
+        <h2>CREATE CONTACT</h2>
+<form action="">
+    <label for="contact name"><h2>Name</h2></label> <br>
+    <input type="text" name="Name" id="name" > <br>
+    <label for="Number"><h2>Phone Number</h2></label> <br>
+    <input type="tel" name="Number" id="number"> <br><br>
+    <input type="button" value="SUBMIT" id="submit" onclick="add()"> <br><br>
+    <input type="reset" value="NEW CONTACT">
+</form>
+    </section>
+
+    <section id="display">
+<h1>CONTACTS</h1>
+<div class="contact-display"></div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
