@@ -5,6 +5,7 @@ const details = document.querySelector(".contact-display");
 const arr = [];
 
 
+
   
 
     function add() {
