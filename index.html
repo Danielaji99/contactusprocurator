@@ -13,11 +13,12 @@
 <body>
     <section id="header">
       <div class="header">
-        <img src="contact-information.png" alt="logo">
-        <h1>CONTACTUS PROCURATOR</h1>
+         <h1>CONTACTUS PROCURATOR</h1>
+         <!-- <img src="contact-information.png" alt="logo"> -->
+       
       </div>
     </section> 
-
+ <div class="split">
     <section id="input">
         <h2>CREATE CONTACT</h2>
 <form action="">
@@ -25,16 +26,19 @@
     <input type="text" name="Name" id="name" > <br>
     <label for="Number"><h2>Phone Number</h2></label> <br>
     <input type="tel" name="Number" id="number"> <br><br>
-    <input type="button" value="SUBMIT" id="submit" onclick="add()"> <br><br>
-    <input type="reset" value="NEW CONTACT">
+    <input type="button" value="SUBMIT" id="submit" class="btn" onclick="add()"><br><br>
+    <input type="reset" value="NEW CONTACT" class="btn"> <br><br>
+    <input type="button" value="DELETE" class="btn red" onclick="remove()">
 </form>
+<h2 id="test"></h2>
     </section>
 
     <section id="display">
-<h1>CONTACTS</h1>
+<h2>CONTACTS</h2>
 <div class="contact-display"></div>
     </section>
 
+</div>
     <script src="index.js"></script>
 </body>
 </html>

@@ -2,7 +2,11 @@
 
 const details = document.querySelector(".contact-display");
 
-const arr = [];
+const localContact = JSON.parse(localStorage.getItem("contact")) ;
+ let arr = [];
+ if (localContact) {
+  arr = localContact
+ }
 
 
 
@@ -11,7 +15,8 @@ const arr = [];
     function add() {
         let name = (document.getElementById("name").value);
         let number = (document.getElementById("number").value);
-          arr.push({name:name , number : number});
+        console.log(arr);
+          arr.push ({name:name , number : number});
             details.innerHTML = ""
             for(
                 let i = 0; i < arr.length ; i++
@@ -23,5 +28,15 @@ const arr = [];
             </div>`;
             details.innerHTML += innerElem;
             } 
+        localStorage.setItem("contact", JSON.stringify(arr))
+
         
          }
+
+         
+         
+        
+          
+        
+
+      
